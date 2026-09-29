@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("/Gridania.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 250px;
+    max-width: 80%;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+   body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+.machine {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px 30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.machine h2 {
+    margin-bottom: 30px;
+}
+
+.machine p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.machine form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    width: 150px;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}

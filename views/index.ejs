@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vespera's Joke Machine</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <h1>Vespera's Joke Machine</h1>
+
+    <img src="/Vlove.png" alt="Vespera's Joke Machine">
+    
+    <div class="machine">
+
+        <h2>DISTRIBUTED FROM GRIDANIA</h2>
+
+        <p>INSERT YOUR WORD</p>
+
+        <form action="/get-joke" method="POST">
+            <input type="text" name="name" placeholder="Enter your name">
+            <button type="submit">PULL LEVER</button>
+        </form>
+        
+        <% if (joke) { %>
+    <div class="joke">
+        <p><%= joke %></p>
+    </div>
+    <% } %>
+    </div>
+
+</body>
+</html>

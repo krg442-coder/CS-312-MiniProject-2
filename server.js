@@ -27,7 +27,7 @@ app.post("/get-joke", async (req, res) => {
 
 
 if (response.data.error) {
-    joke = "Sorry, I couldn't find a joke for that name!";
+    joke = "Sorry, I couldn't find a joke for that word!";
 }
 else if (response.data.type === "single") {
     joke = response.data.joke;
